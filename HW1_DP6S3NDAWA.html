@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 80%;
+        }
+
+        form {
+            background-color: rgba(236, 239, 243, 0.658);
+            padding: 20px;
+            padding-right: 1em;
+            text-align: justify;
+        }
+
+        input {
+            height: 25px;
+        }
+
+
+        /* input [type = 'text'] {
+            width: 80%;
+        } */
+
+        .nameInput {
+            width: 100%;
+            margin-bottom: 1em;
+        }
+
+        #country {
+            height: 34px;
+            width: 100.5%;
+        }
+
+        textarea {
+            width: 100%;
+            margin-bottom: 0.5em;
+        }
+
+        .container {
+            padding-right: 10em;
+            padding-left: 10em;
+            margin-top: 14%;
+        }
+
+        .button {
+            background-color: rgb(12, 161, 77);
+            color: seashell;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width: 5em;
+            border-radius: 0.2em;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <label>First Name<br/>
+            <input type="text" placeholder="Your Name..." name="First name" class="nameInput"></label><br/>
+    
+            <label>Last Name<br/>
+            <input type="text" placeholder= "Your last name..." name="Last name" class="nameInput"></label><br/>
+            <label for=""> Country </label> <br>
+                <select class="nameInput" id="country">
+                    <option value="Australia">Australia</option>
+                    <option value="Ghana">Ghana</option>
+                    <option value="Togo">Togo</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Burkina Faso">Burkina Faso</option>
+                </select>
+            <br/>
+            <label>Subject<br/>
+            <textarea cols="30" rows="10" placeholder="Write something..."></textarea><br/>
+            <input type="submit"  value="Submit" class="button" /></label>
+        </form>
+    </div>
+</body>
+</html>
